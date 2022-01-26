@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.form {
+  width: 295px;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 25px 21px;
+}
+
+.form__toggler {
+  background-color: transparent;
+  color: #000;
+  padding: 0;
+  border: none;
+  display: block;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  border: 1px solid #E0E0E0;
+  padding: 8px 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.form__checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__checkbox-label {
+  width: calc((100% - 10px) / 2);
+  margin-right: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.form__checkbox-label:nth-child(2n) {
+  margin-right: 0;
+}
+
+.form__styled-checkbox {
+  margin: 0;
+  margin-right: 15px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #CDCDCD;  
+}
+
+.form__checkbox:checked + .form__styled-checkbox {
+  border-color: #FF7931;
+  background: #FF7931 url("../img/tick.svg") no-repeat center center;
+}
+
+.form__checkbox:focus + .form__styled-checkbox {
+  border-color: #797979;
+}
+
+.form__checkbox:focus:checked + .form__styled-checkbox {
+  background-color: #cc4700;
+  border-color: #cc4700;
+}
+
+.form__toggler--radio::after {
+    background-image: url(../img/question.svg);
+}
+
+.form__radios {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 29px;
+}
+
+.form__radios-label {
+    display: flex;
+    align-items: center;
+    width: calc((100% - 15px) / 2);
+    margin-right: 10px;
+}
+
+.form_radios__label:last-child {
+    margin-right: 0;
+}
+
+.form__styled-radio {
+    display: inline-block;
+    margin:0;
+    width: 14px;
+    height: 14px;
+    margin-right: 15px;
+    border: 1px solid #CDCDCD;
+}
+
+.form__radio:checked + .form__styled-radio {
+    background: #dadada url(../img/rectangle.svg) no-repeat center center;
+    background-size: 7px 10px;
+}
+
+.form__sale-checkbox {
+    display: flex;
+    margin-top: 21px;
+    margin-bottom: 18px;
+}
+
+.sale__checkbox-label {
+    margin-right: 10px;
+}
+
+.sale__checkbox-styled {
+    display: inlineb;
+    padding: 0;
+    margin: 0;
+    border: 1px solid;
+    padding:7px 15px;
+}
+
+.sale__checkbox:checked + .sale__checkbox-styled {
+    background: linear-gradient(91.1deg, #9710E9 1.17%, #FD8D43 99.31%);
+}

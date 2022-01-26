@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('Barlow-Bold.woff2') format('woff2'),
+        url('Barlow-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('Fraunces-9ptBlackItalic.woff2') format('woff2'),
+        url('Fraunces-9ptBlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('Fraunces-9ptBlack.woff2') format('woff2'),
+        url('Fraunces-9ptBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('Barlow-Regular.woff2') format('woff2'),
+        url('Barlow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 44px;
+    margin-bottom: 45px;
+}
+
+.header__list {
+    display: flex;
+    list-style-type: none;
+}
+
+.header__list-item a {
+    margin-left: 32px;
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+/* form */
+
+.forms {
+    margin-top: 200px;
+}
+
+/* .forms {} bu vaqtinchalik ajratib turish uchun */
+
+.forms__container {
+    width: 1110px;
+    /* margin:0 auto; */
+    margin-left: 165px;
+    margin-right: 165px;
+    display: flex;
+}
+
+.forms__buttons {
+    margin-right: 125px;
+}
+
+.forms__button {
+    width: 255px;
+    display: block;
+    font-family: 'Fraunces' , serif;
+    color: #83888F;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 24px 0;
+    border-bottom: 1px solid #83888F;
+}
+
+.forms__button:first-child {
+    padding-top: 0;
+}
+
+.forms__button:first-child span {
+    color:#0E8784;
+}
+
+.forms__button:last-child {
+    color: #333D4B;
+}
+
+.forms__button:last-child span {
+    color:#83888F;
+}
+
+.forms__button:hover {
+    color:#333D4B;
+}
+
+.forms__button span:active {
+    color:#0E8784;
+}
+
+.button__number {
+    margin-right: 25px;
+}
+
+.forms__title-button {
+    display: flex;
+    align-items: center;
+}
+
+.forms__title-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forms__title-button::after {
+    width: 18.19px;
+    height: 11.92px;
+    display: inline-block;
+    background-image: url(../img/up.svg);
+    content: '';
+}
+
+.CoffeeForm__title {
+    font-family: 'Fraunces' , serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color:#83888F;
+    border:none;
+    background:none;
+}
+
+.CoffeeForm__labels {
+    margin-top: 56px;
+    display: flex;
+    margin-bottom: 88px;
+}
+
+.CoffeeForm__label {
+    margin-right: 23px;
+}
+
+.CoffeeForm__label:nth-child(3n) {
+    margin-right: 0;
+}
+
+.checkbox-styled {
+    width: 228px;
+    height: 250px;
+    background: #F4F1EB;
+    border-radius: 8px;
+    padding-left: 28px;
+}
+
+.checkbox-styled__description {
+    width: 172px;
+    font-family: 'Barlow' , sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color:#83888F;
+}
+
+.checkbox-styled--active {
+    background: #0E8784;
+    color:#fff;
+}
+
+.checkbox-styled--active .checkbox-styled__description {
+    color:#fff;
+}
+
+.CoffeeForm__checkbox:checked + .checkbox-styled {
+    background: #0E8784;
+    color:#fff;
+}
+
+.CoffeeForm__checkbox:checked + .checkbox-styled p {
+    color:#fff;
+}
+
+.cof .CoffeForm__checkbox:checked + .checkbox-styled {
+    background:#0E8784;
+    color:#fff;
+}
+
+.checkbox-styled__title  {
+    padding-top: 32px;
+    padding-bottom: 24px;
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+}

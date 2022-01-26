@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffeeroaster subscribe</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header__container">
+            <nav class="header__navbar">
+                <img class="logo-icon header__logo" src="img/logo.svg" alt="header logo icon" width="203" height="24">
+
+
+                <ul class="header__list">
+                    <li class="header__list-item"><a href="#">HOME</a></li>
+                    <li class="header__list-item"><a href="#">ABOUT US</a></li>
+                    <li class="header__list-item"><a href="#">CREATE YOUR PLAN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="forms">
+        <div class="container forms__container">
+            
+            <div class="forms__buttons">
+                <a href="#preferences" class="forms__button"><span class="button__number">01</span> Preferences</a>
+                <a href="#type" class="forms__button"><span class="button__number">02</span>Bean type</a>
+                <a href="#quantity" class="forms__button"><span class="button__number">03</span>Quantity</a>
+                <a href="#grind" class="forms__button"><span class="button__number">04</span>Grind option</a>
+                <a href="#deliveries" class="forms__button"><span class="button__number">05</span>Deliveries</a>
+            </div>
+
+            <form action="/" method="get">
+
+                <div id="preference">
+                    <div class="forms__title-button">
+                        <button class="CoffeeForm__title">How do you drink your coffee?</button>
+                    </div>
+                    <div class="CoffeeForm__labels">
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="preferences__checkbox">
+                            <div class="checkbox-styled">
+                                <h3 class="checkbox-styled__title">Capsule</h3>
+                                <p class="checkbox-styled__description">Compatible with Nespresso systems and similar brewers</p>
+                            </div>
+                        </label>
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="preferences__checkbox">
+                            <div class="checkbox-styled checkbox-styled--active">
+                                <h3 class="checkbox-styled__title">Filter</h3>
+                                <p class="checkbox-styled__description">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                            </div>
+                        </label>
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="CoffeeForm__checkbox">
+                            <div class="checkbox-styled">
+                                <h3 class="checkbox-styled__title">Espresso</h3>
+                                <p class="checkbox-styled__description">Dense and finely ground beans for an intense, flavorful experience</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="type">
+                    <div class="forms__title-button">
+                        <button class="CoffeeForm__title">What type of coffee?</button>
+                    </div>
+                    <div class="CoffeeForm__labels">
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="type__checkbox">
+                            <div class="checkbox-styled">
+                                <h3 class="checkbox-styled__title">Single Origin</h3>
+                                <p class="checkbox-styled__description">Distinct, high quality coffee from a specific family-owned farm</p>
+                            </div>
+                        </label>
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="type__checkbox">
+                            <div class="checkbox-styled checkbox-styled--active">
+                                <h3 class="checkbox-styled__title">Decaf</h3>
+                                <p class="checkbox-styled__description">Just like regular coffee, except the caffeine has been removed
+                                </p>
+                            </div>
+                        </label>
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="type__checkbox">
+                            <div class="checkbox-styled">
+                                <h3 class="checkbox-styled__title">Blended</h3>
+                                <p class="checkbox-styled__description">Combination of two or three dark roasted beans of organic coffees</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="quantity">
+                    <div class="forms__title-button">
+                        <button class="CoffeeForm__title">How much would you like?</button>
+                    </div>
+                    <div class="CoffeeForm__labels">
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="quantity__checkbox">
+                            <div class="checkbox-styled checkbox-styled--active">
+                                <h3 class="checkbox-styled__title">250g</h3>
+                                <p class="checkbox-styled__description">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                            </div>
+                        </label>
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="quantity__checkbox">
+                            <div class="checkbox-styled checkbox-styled">
+                                <h3 class="checkbox-styled__title">500g</h3>
+                                <p class="checkbox-styled__description">Perfect option for a couple. Yields about 40 delectable cups.
+                                </p>
+                            </div>
+                        </label>
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="quantity__checkbox">
+                            <div class="checkbox-styled">
+                                <h3 class="checkbox-styled__title">1000g</h3>
+                                <p class="checkbox-styled__description">Perfect for offices and events. Yields about 90 delightful cups.</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="grind">
+                    <div class="forms__title-button">
+                        <button class="CoffeeForm__title">Want us to grind them?</button>
+                    </div>
+                    <div class="CoffeeForm__labels">
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="grind__checkbox">
+                            <div class="checkbox-styled">
+                                <h3 class="checkbox-styled__title">Wholebean</h3>
+                                <p class="checkbox-styled__description">Best choice if you cherish the full sensory experience</p>
+                            </div>
+                        </label>
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="grind__checkbox">
+                            <div class="checkbox-styled checkbox-styled">
+                                <h3 class="checkbox-styled__title">Filter</h3>
+                                <p class="checkbox-styled__description">For drip or pour-over coffee methods such as V60 or Aeropress
+                                </p>
+                            </div>
+                        </label>
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="grind__checkbox">
+                            <div class="checkbox-styled checkbox-styled--active">
+                                <h3 class="checkbox-styled__title">Cafetiére</h3>
+                                <p class="checkbox-styled__description">Course ground beans specially suited for french press coffee</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="deliveries">
+                    <div class="forms__title-button">
+                        <button class="CoffeeForm__title">How often should we deliver?</button>
+                    </div>
+                    <div class="CoffeeForm__labels">
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="deliveries__checkbox">
+                            <div class="checkbox-styled checkbox-styled--active">
+                                <h3 class="checkbox-styled__title">Every week</h3>
+                                <p class="checkbox-styled__description">$7.20 per shipment. Includes free first-class shipping.</p>
+                            </div>
+                        </label>
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="deliveries__checkbox">
+                            <div class="checkbox-styled checkbox-styled">
+                                <h3 class="checkbox-styled__title">Every 2 weeks</h3>
+                                <p class="checkbox-styled__description">$9.60 per shipment. Includes free priority shipping.
+                                </p>
+                            </div>
+                        </label>
+                        <label class="CoffeeForm__label">
+                            <input class="CoffeeForm__checkbox visually-hidden" type="checkbox" name="deliveries__checkbox">
+                            <div class="checkbox-styled">
+                                <h3 class="checkbox-styled__title">Every month</h3>
+                                <p class="checkbox-styled__description">$12.00 per shipment. Includes free priority shipping.</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
